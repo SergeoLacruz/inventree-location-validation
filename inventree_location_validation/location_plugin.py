@@ -14,14 +14,10 @@ class LocationValidatorPlugin(SettingsMixin, ValidationMixin, InvenTreePlugin):
     SLUG = 'locationvalidatorplugin'
     TITLE = 'Location Validator Plugin'
     DESCRIPTION = 'A plugin that checks if the target location is full'
+    PUBLISH_DATE = "2025-11-25:00:00"
     VERSION = PLUGIN_VERSION
 
     SETTINGS = {
-        'ILLEGAL_PART_CHARS': {
-            'name': 'Illegal Part Characters',
-            'description': 'Characters which are not allowed to appear in Part names',
-            'default': '!@#$%^&*()~`',
-        },
     }
 
     def validate_model_instance(self, instance, deltas=None):
