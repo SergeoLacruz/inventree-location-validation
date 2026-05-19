@@ -9,7 +9,7 @@ metadata field of the stocklocation is used to set a maximum quantity of stock i
 ## Installation
 
 ```
-pip install git+https://github.com/SergeoLacruz/inventree-build-data
+pip install git+https://github.com/SergeoLacruz/inventree-location-validation
 ```
 
 Example: A SMD reel rack usually can hold only one reel per position. The plugin 
